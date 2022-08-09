@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { getAllUserAction } from "store/movie";
+import { getListUserAction } from "store/manageUser";
 
 const Home = () => {
   const dispatch = useDispatch<any>();
@@ -11,7 +11,7 @@ const Home = () => {
       
     })();
  */
-    dispatch(getAllUserAction());
+    dispatch(getListUserAction());
   }, []);
 
   //--

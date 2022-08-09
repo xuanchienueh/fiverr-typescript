@@ -1,7 +1,5 @@
 declare type HttpResponse<T = undefined> = {
-  data?: {
-    content?: T;
-  };
+  data?: T;
   message?: string;
   statusCode?: number;
 };
